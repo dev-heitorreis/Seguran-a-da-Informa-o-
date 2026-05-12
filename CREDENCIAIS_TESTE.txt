@@ -1,0 +1,61 @@
+CREDENCIAIS PARA TESTE - ENTREGA 2
+===================================
+
+PERFIL: ADMINISTRADOR
+═══════════════════════
+CPF:      111.444.777-88
+Senha:    Admin@2026
+Nome:     Administrador Geral
+E-mail:   admin@faculdade.local
+Permissões:
+  ✓ Visualizar todas as ocorrências
+  ✓ Criar novas ocorrências
+  ✓ Exportar dados em JSON
+  ✓ Limpar logs de auditoria
+  ✓ Ver conteúdo administrativo
+
+PERFIL: PROFESSOR
+══════════════════
+CPF:      222.555.888-11
+Senha:    Prof@2026
+Nome:     Prof. Ricardo Silva
+E-mail:   ricardo@faculdade.local
+Permissões:
+  ✓ Visualizar todas as ocorrências
+  ✓ Criar novas ocorrências
+  ✗ Exportar dados
+  ✗ Limpar logs
+
+PERFIL: ALUNO
+═══════════════
+CPF:      [Qualquer CPF em formato válido XXX.XXX.XXX-XX]
+Senha:    123456
+Nome:     Aluno Padrão
+E-mail:   aluno@faculdade.local
+Permissões:
+  ✓ Visualizar apenas suas próprias ocorrências
+  ✓ Criar novas ocorrências com seu CPF
+  ✗ Ver ocorrências de outros alunos
+  ✗ Acessar funções administrativas
+
+TESTE RÁPIDO
+════════════
+
+1. Abra index.html
+2. Login com: 111.444.777-88 / Admin@2026
+3. Clique em "Exportar JSON" (deve funcionar)
+4. Logout
+5. Login com CPF aluno / 123456
+6. Tente criar uma ocorrência
+7. Procure exportar (botão não aparece)
+
+SEGURANÇA DE TESTE
+═══════════════════
+
+⚠ IMPORTANTE: As credenciais acima são APENAS para teste em ambiente local.
+Para produção, usar autenticação via servidor com senhas criptografadas.
+
+Todos os dados são armazenados em Base64 no localStorage (não é criptografia real,
+apenas ofuscação para evitar inspeção casual).
+
+
